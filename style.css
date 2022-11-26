@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    margin: 0;
+}
+body {
+    height: 100%;
+    background-color: rgb(31, 31, 37);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    position: fixed;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.myName {
+    position: fixed;
+    /* background-color: rgba(255, 255, 255, 0.062); */
+    height: 100px;
+    width: 1920px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.gridGlobal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 100px;
+}
+
+.myPhotoSize {
+    height: 853px;
+    width: 1280px;
+}
+
+.slider {
+    height: 853px;
+    width: 1280px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.slider-line {
+    height: 853px;
+    width: 5120px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    
+}
+
+.slider-next {
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+
+.slider-prev {
+    background-color: rgba(255, 255, 255, 0.123);
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.slider-next:hover {
+    background-color: red;
+}
+.slider-prev:hover {
+    background-color: red;
+}
+
+.buttons-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe {
+    /* border-top: 1px solid black; */
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 520px;
+    justify-self: center;
+}
+
+.about-box {
+    border: 1px solid black;
+    margin-top: 40px;
+    background-color: rgb(58, 58, 63);
+}
+
+.soc-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    
+}
+
+.soc-logo {
+    height: 80px;
+    width: 80px;
+    padding: 40px;
+}
